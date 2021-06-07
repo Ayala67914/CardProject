@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "1",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "name": "2",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "name": "1",
+        "isSelected": false
+    },
+    {
+        "id": 4,
+        "name": "2",
+        "isSelected": false
+    },
+    {
+        "id": 5,
+        "name": "1",
+        "isSelected": false
+    },
+    {
+        "id": 6,
+        "name": "2",
+        "isSelected": false
+    },
+    {
+        "id": 7,
+        "name": "3",
+        "isSelected": false
+    },
+    {
+        "id": 8,
+        "name": "3",
+        "isSelected": false
+    }
+]

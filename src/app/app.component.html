@@ -1,0 +1,32 @@
+<mat-toolbar>
+        <span>{{countAllCard}}</span>
+            <span>סך כרטיסים:</span>
+            <br>
+            <span>{{countCardSelected}}</span>
+            <span>סך כרטיסים שנבחרו:</span>
+            <br>
+            <span>{{countCardNotSelected}}</span>
+            <span>סך כרטיסים שלא נבחרו:</span>
+</mat-toolbar>
+
+<div style="margin:auto;max-width:300px;">
+        <label  for="search-input" class="search-label"><h3>חיפוש: </h3></label>
+        <input name="search-input" class="search-container" type="search" [(ngModel)]="search" placeholder="הקלד כאן...">
+</div>
+<mat-tab-group (selectedTabChange)="Display($event)" animationDuration="0ms" mat-align-tabs="center">
+    <mat-tab label="הכל"></mat-tab>
+    <mat-tab label="נבחרו"></mat-tab>
+    <mat-tab label="לא נבחרו"></mat-tab>
+</mat-tab-group>
+
+<div class="flex-container">
+    <div *ngFor="let card of (cardsToShow|filter:search) as c">
+        <card (click)="card.isSelected=!card.isSelected;Display2()" [card]="card"></card>
+    </div>
+</div>
+<br>
+<div class="selected-container">
+    <div *ngFor="let card of cardsList">
+        <div *ngIf="card.isSelected" class="item">{{card.name}}</div>
+    </div>
+</div>

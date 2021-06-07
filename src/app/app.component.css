@@ -1,0 +1,56 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    width:550px ;
+    align-content: space-around;
+    margin:auto;
+  }
+  .item{
+width: 30px;
+height: 30px;
+  }
+  .selected-container{
+      display: flex;
+      width: 300px;
+      flex-flow: row wrap;
+      margin:auto;
+      font-size: 40px;
+  }
+  .filter-container{
+    display: flex;
+    width: 200px;
+    flex-flow: row wrap;
+  }
+  .mat-tab-group {
+    margin-bottom: 48px;
+  }
+  .search-container {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: center;
+    width: 90%;
+    direction: rtl;
+    background: #f1f1f1;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  span{
+  font-size: 20px;
+  padding: 10px;
+  direction: rtl;
+  } 
+  .search-label{
+      direction: rtl;
+float: right;
+  }
+  
+  

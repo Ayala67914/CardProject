@@ -1,0 +1,17 @@
+.text-style{
+width: 40px;
+height: 40px;
+color: brown;
+font-size: 30px;
+border: black;
+margin: 10px;
+padding: 30px;
+border-style: solid;
+text-align: center;
+}
+.is-selected{
+background-color: orange;
+}
+.is-not-selected{
+background-color: white;
+}
