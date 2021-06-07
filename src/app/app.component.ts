@@ -41,21 +41,10 @@ export class AppComponent implements OnInit {
   }
   Display($event: any): void {
     this.show = $event.index;
-    this.Display2();
-    // switch ($event.index) {
-    //   case (this.eDisplay.all):
-    //     this.cardsToShow = this.cardsList;
-    //     break;
-    //   case (this.eDisplay.selected):
-    //     this.cardsToShow = this.cardsList.filter(x => x.isSelected);
-    //     break;
-    //   case (this.eDisplay.notSelected):
-    //     this.cardsToShow = this.cardsList.filter(x => !x.isSelected);
-    //     break;
-    // }
+    this.DisplayByTab();
 
   }
-  Display2(): void {
+  DisplayByTab(): void {
     switch (this.show) {
       case (this.eDisplay.all):
         this.cardsToShow = this.cardsList;

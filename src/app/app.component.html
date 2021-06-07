@@ -8,8 +8,6 @@
             <span>{{countCardNotSelected}}</span>
             <span>סך כרטיסים שלא נבחרו:</span>
 </mat-toolbar>
-
-
 <div style="margin:auto;max-width:300px;">
         <label  for="search-input" class="search-label"><h3>חיפוש: </h3></label>
         <input name="search-input" class="search-container" type="search" [(ngModel)]="search" placeholder="הקלד כאן...">
@@ -22,7 +20,7 @@
 
 <div class="flex-container">
     <div *ngFor="let card of (cardsToShow|filter:search) as c">
-        <card (click)="card.isSelected=!card.isSelected;Display2()" [card]="card"></card>
+        <card (click)="card.isSelected=!card.isSelected;DisplayByTab()" [card]="card"></card>
     </div>
 </div>
 <br>
